@@ -1,4 +1,4 @@
-FROM uvatbc/qt4
+FROM uvatbc/qt:qt4
 
 # Keep the update separate so that Docker build system can cache it.
 RUN sudo apt-get update

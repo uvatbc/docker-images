@@ -34,7 +34,7 @@ RUN sudo apt-get install -y \
         libncurses5-dev \
         libopencv-dev \
         libphonon-dev \
-        libpoppler-qt4-dev
+        libpoppler-qt4-dev \
         libqt5webkit5-dev \
         libqt5xmlpatterns5-dev \
         libsdl1.2-dev \
