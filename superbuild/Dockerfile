@@ -51,7 +51,7 @@ RUN sudo apt-get install -y \
         libxrender-dev \
         openssl \
         qt5-default \
-        qtmultimedia5-dev
+        qtmultimedia5-dev \
         perl \
         python \
         python-dev \
