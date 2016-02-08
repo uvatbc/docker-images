@@ -20,7 +20,11 @@ RUN sudo pip install --upgrade \
         django \
         uwsgi
 
-RUN sudo rm /etc/nginx/sites-enabled/* ; sudo ln -s /app/nginx.conf /etc/nginx/sites-enabled/nginx.conf
+RUN sudo rm /etc/nginx/sites-enabled/* ; \
+    sudo ln -s /app/nginx-site.conf /etc/nginx/sites-enabled/nginx-site.conf
+
+# nginx conf file
+COPY nginx.conf /etc/nginx/
 
 # Use supervisord to start django and nginx by default
 COPY apps.conf /etc/supervisor/conf.d/
