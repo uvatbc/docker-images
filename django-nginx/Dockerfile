@@ -5,6 +5,7 @@ RUN sudo apt-get update
 RUN sudo apt-get -y install \
         build-essential \
         git \
+        libpq-dev \
         nginx \
         python-dev \
         python-django \
