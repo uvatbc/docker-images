@@ -89,7 +89,6 @@ RUN sudo apt-get install -y \
     audacious-dev \
     autotools-dev \
     baloo-dev \
-    baloo-kf5-dev \
     bareos-devel \
     beignet-dev \
     binutils-dev \
@@ -165,7 +164,6 @@ RUN sudo apt-get install -y \
     dssi-dev \
     e17-dev \
     e2fslibs-dev \
-    ebook-dev-alp \
     ecere-dev \
     emerillon-dev \
     eog-dev \
@@ -187,7 +185,6 @@ RUN sudo apt-get install -y \
     fflas-ffpack-dev-doc \
     fftw-dev \
     fglrx-dev \
-    fglrx-updates-dev \
     finch-dev \
     firebird-dev \
     firefox-dev \
@@ -206,7 +203,6 @@ RUN sudo apt-get install -y \
     freetds-dev \
     frei0r-plugins-dev \
     fso-deviced \
-    fso-deviced-dbg \
     fso-deviced-player-canberra \
     fso-deviced-player-gstreamer \
     ftgl-dev \
@@ -243,7 +239,6 @@ RUN sudo apt-get install -y \
     gmpc-dev \
     gnash-dev \
     gnome-control-center-dev \
-    gnome-core-devel \
     gnome-devel \
     gnome-devel-docs \
     gnome-platform-devel \
@@ -1642,11 +1637,8 @@ RUN sudo apt-get install -y \
     libgccjit-5-dev \
     libgccxml-dev \
     libgc-dev \
-    libgcj14-dbg \
     libgcj14-dev \
-    libgcj15-dbg \
     libgcj15-dev \
-    libgcj16-dbg \
     libgcj16-dev \
     libgck-1-dev \
     libgconf2.0-cil-dev \
@@ -5014,7 +5006,6 @@ RUN sudo apt-get install -y \
     libwildmagic-dev \
     libwildmidi-dev \
     libwine-development \
-    libwine-development-dbg \
     libwine-development-dev \
     libwings-dev \
     libwinpr-dev \
@@ -5478,12 +5469,6 @@ RUN sudo apt-get install -y \
 
 RUN sudo apt-get install -y \
     portaudio19-dev \
-    postfix-dev \
-    postgresql-server-dev-9.1 \
-    postgresql-server-dev-9.2 \
-    postgresql-server-dev-9.3 \
-    postgresql-server-dev-9.4 \
-    postgresql-server-dev-9.5 \
     postgresql-server-dev-all \
     powerdevil-dev \
     ppl-dev \
@@ -5544,7 +5529,6 @@ RUN sudo apt-get install -y \
     qt5keychain-dev \
     qtbase5-dev \
     qtbase5-dev-tools \
-    qtbase5-dev-tools-dbg \
     qtbase5-gles-dev \
     qtbase5-private-dev \
     qtbase5-private-gles-dev \
