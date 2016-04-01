@@ -6,8 +6,8 @@ RUN sudo apt-get install -y \
         autoconf \
         automake \
         bc \
+        libelf-dev \
         libncurses5-dev \
         libssl-dev \
         openssl \
         perl
-

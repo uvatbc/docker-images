@@ -1,5 +1,9 @@
 FROM uvatbc/ubuntu:15.10
 
+ENV DEBIAN_FRONTEND noninteractive
+RUN sudo sh -c "echo 'postfix postfix/mailname string your.hostname.com' | debconf-set-selections"
+RUN sudo sh -c "echo \"postfix postfix/main_mailer_type string 'Internet Site'\" | debconf-set-selections"
+
 # Keep the update separate so that Docker build system can cache it.
 RUN sudo apt-get update
 RUN sudo apt-get install -y \
