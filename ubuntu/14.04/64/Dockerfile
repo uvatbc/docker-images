@@ -5,6 +5,8 @@ RUN apt-get update && \
     apt-get install -y \
         bash-completion \
         build-essential \
+        git \
+        subversion \
         vim \
         sudo
 RUN echo ". /etc/bash_completion" >> /root/.bashrc
