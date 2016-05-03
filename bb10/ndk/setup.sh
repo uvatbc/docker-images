@@ -28,8 +28,3 @@ rm ./$FILE
 ~/bin/bbndk/qde
 # Continue the NDK install
 ~/bin/bbndk/qde
-
-# Prep qt5 build script
-mkdir -p ~/code/qt5
-cd ~/code/qt5
-mv /tmp/bb10_build_qt5.sh .

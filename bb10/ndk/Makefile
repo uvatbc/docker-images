@@ -10,7 +10,8 @@ help:
 	@echo 'In another terminal, run the following in order:'
 	@echo '"make copy_files"'
 	@echo '"make run_setup"'
-	@echo 'After run_setup ends, "make run_ssh_bash" and run ~/bin/bbndk/qde'
+	@echo 'After run_setup ends, it might be necessart to "make run_ssh_bash" and run ~/bin/bbndk/qde'
+	@echo 'In the end, quit the "make run_sshd" using Ctrl+C. This will commit the container'
 
 clean:
 	-docker rmi $$(docker images | awk '{ if ($$1 == "$(IMGTAG)" && $$2 == "$(IMGVER)") { print $$1":"$$2 } }')
@@ -30,7 +31,6 @@ copy_files:
 		-o UserKnownHostsFile=/dev/null \
 		-o StrictHostKeyChecking=no \
 		setup.sh \
-		bb10_build_qt5.sh \
 		admin@`docker inspect --format '{{ .NetworkSettings.IPAddress }}' ${CONTAINER_NAME}`:/tmp/
 
 run_setup:
